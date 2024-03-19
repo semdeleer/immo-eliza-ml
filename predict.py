@@ -2,8 +2,11 @@ import pickle
 
 model = open("model_pickle", "rb")
 model = pickle.load(model)
+dt = open("model_pickle_dt", "rb")
+dt = pickle.load(dt)
 
-predict= [[
+
+predictlr= [[
     8500, 920.0, 800.000000, 32.768764, 4, 6, 3.0, 0.0, 1, 0.0,
     0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
@@ -15,4 +18,12 @@ predict= [[
     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
     0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]]
 
-model.predict(predict)
+lr = model.predict(predictlr)
+
+
+predicttf = [[39900.0, 65.0, 0.0, 1]]
+
+cl = dt.predict(predicttf)
+
+print(f"liner regression model:{lr} \n"
+      f"discicion Tree model: {cl}")
