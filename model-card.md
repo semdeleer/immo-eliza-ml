@@ -13,24 +13,24 @@
 - **Framework/Libraries**: scikit-learn
 - **Programming Language**: Python
 - **Model Input**: 
-  - `postal_code`: 1060
-  - `property_type`: HOUSE
-  - `property_subtype`: HOUSE
-  - `type_of_sale`: BUY_REGULAR
-  - `living_area`: 220.0
-  - `kitchen_type`: SEMI_EQUIPPED
-  - `fully_equipped_kitchen`: 1.0
-  - `open_fire`: 0
-  - `terrace`: 0
-  - `terrace_area`: 50.0
-  - `garden`: 1.0
-  - `garden_area`: 100.0
-  - `surface_of_good`: 218.0
-  - `number_of_facades`: 4
-  - `swimming_pool`: 1.0
-  - `state_of_building`: GOOD
-  - `main_city`: wevelgem
-  - `province`: west-vlaanderen
+  - `postal_code`: 
+  - `property_type`: 
+  - `property_subtype`: 
+  - `type_of_sale`: 
+  - `living_area`: 
+  - `kitchen_type`: 
+  - `fully_equipped_kitchen`: 
+  - `open_fire`: 
+  - `terrace`: 
+  - `terrace_area`: 
+  - `garden`: 
+  - `garden_area`: 
+  - `surface_of_good`: 
+  - `number_of_facades`: 
+  - `swimming_pool`: 
+  - `state_of_building`: 
+  - `main_city`: 
+  - `province`:
 - **Model Output**: Predicted price of the house
 
 ## Intended Use
@@ -61,16 +61,3 @@
 
 - **Improvements**: Exploring advanced feature engineering techniques to capture more nuanced property characteristics.
 - **Extensions**: Integrating additional external data sources such as economic indicators and demographic information for better prediction accuracy.
-
-## Citation
-
-[If applicable, provide citation information for the model or associated research papers]
-
-## Acknowledgments
-
-[Optional: Acknowledge individuals, organizations, or funding sources that contributed to the development of the model]
-
-## References
-
-[Optional: Provide references to related papers, documentation, or resources]
-
