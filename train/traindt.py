@@ -34,7 +34,10 @@ print(y_pred_en)
 
 print(f"Accuracy is: {accuracy_score(y_test, y_pred_en)*100}")
 
-predicttf = [[240000.0, 100.0, 1.0, 4]]
+p = {"price": [240000.0 ], "surface_of_good": [165.0], "swimming_pool": [1.0], "state_of_building": [4]}
+testdata = pd.DataFrame(p)
 
-cl = clf_entropy.predict(predicttf)
+
+print(X_train.head())
+cl = clf_entropy.predict(testdata)
 print(cl)

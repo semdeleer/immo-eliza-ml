@@ -107,7 +107,13 @@ Before utilizing the raw data in the machine learning model, it undergoes severa
 │       └── properties.csv
 ├── train
 │   └── train.py
+│   └── trainb.py
+│   └── traindt.py
+├── .gitattributes
+├── .gitignore
 ├── model_pickle
+├── model_pickle_b
+├── model_pickle_dt
 ├── predict.py
 ├── README.md
 └── requirements.txt
