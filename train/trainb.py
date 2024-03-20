@@ -37,10 +37,10 @@ with open('model_pickle_b', 'wb') as f:
     mp = pickle.dump(model, f)
 
 
-print('Mean squared error : ' + str(mean_squared_error(y_test,y_pred)))
-print('Mean absolute error : ' + str(mean_absolute_error(y_test,y_pred)))
-print('Explained vaiance score : ' + str(explained_variance_score(y_test,y_pred)))
-print('r2 score : ' + str(r2_score(y_test,y_pred)))
+#print('Mean squared error : ' + str(mean_squared_error(y_test,y_pred)))
+#print('Mean absolute error : ' + str(mean_absolute_error(y_test,y_pred)))
+#print('Explained vaiance score : ' + str(explained_variance_score(y_test,y_pred)))
+#print('r2 score : ' + str(r2_score(y_test,y_pred)))
 
 x_train.head()
 
