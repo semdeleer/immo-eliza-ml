@@ -1,128 +1,76 @@
-# Model card for "add model name here"
+# Model Card: BaggingRegressor for House Price Prediction
 
-Sections and prompts from the [model cards paper](https://arxiv.org/abs/1810.03993), v2.
+## Overview
 
-Jump to section:
+- **Model Name**: BaggingRegressor
+- **Model Version**: 0.15.
+- **Date**: 20/03/2024
+- **Authors**: Sem Deleersnijder
+- **Contact**: [Sem Deleersnijder](https://github.com/semdeleer)
 
-- [Model details](#model-details)
-- [Intended use](#intended-use)
-- [Factors](#factors)
-- [Metrics](#metrics)
-- [Evaluation data](#evaluation-data)
-- [Training data](#training-data)
-- [Quantitative analyses](#quantitative-analyses)
-- [Ethical considerations](#ethical-considerations)
-- [Caveats and recommendations](#caveats-and-recommendations)
+## Model Details
 
-## Model details
+- **Framework/Libraries**: scikit-learn
+- **Programming Language**: Python
+- **Model Input**: 
+  - `postal_code`: 1060
+  - `property_type`: HOUSE
+  - `property_subtype`: HOUSE
+  - `type_of_sale`: BUY_REGULAR
+  - `living_area`: 220.0
+  - `kitchen_type`: SEMI_EQUIPPED
+  - `fully_equipped_kitchen`: 1.0
+  - `open_fire`: 0
+  - `terrace`: 0
+  - `terrace_area`: 50.0
+  - `garden`: 1.0
+  - `garden_area`: 100.0
+  - `surface_of_good`: 218.0
+  - `number_of_facades`: 4
+  - `swimming_pool`: 1.0
+  - `state_of_building`: GOOD
+  - `main_city`: wevelgem
+  - `province`: west-vlaanderen
+- **Model Output**: Predicted price of the house
 
-_Basic information about the model._
+## Intended Use
 
-Review section 4.1 of the [model cards paper](https://arxiv.org/abs/1810.03993).
+- **Primary Use Case**: Predicting house prices based on property features.
+- **Intended Users**: Real estate agents, homeowners, property investors.
+- **Context of Use**: The model is intended to be used for estimating the market value of houses in Belgium, particularly in the West Flanders province.
 
-- Person or organization developing model
-- Model date
-- Model version
-- Model type
-- Information about training algorithms, parameters, fairness constraints or other applied
-  approaches, and features
-- Paper or other resource for more information
-- Citation details
-- License
-- Where to send questions or comments about the model
+## Evaluation
 
-## Intended use
+- **Metrics**: Mean Absolute Error, Mean Squared Error, R-squared
+- **Datasets**: Historical real estate transaction data from Belgium.
+- **Performance**: The model achieved a Mean Absolute Error of X, Mean Squared Error of Y, and R-squared of Z on the test dataset.
 
-_Use cases that were envisioned during development._
+## Ethical Considerations
 
-Review section 4.2 of the [model cards paper](https://arxiv.org/abs/1810.03993).
+- **Bias**: Bias may exist if the training data disproportionately represents certain demographics or regions.
+- **Fairness**: Efforts have been made to ensure fairness in predictions across different property types and locations.
+- **Privacy**: The model does not handle sensitive personal information directly.
 
-### Primary intended uses
+## Limitations
 
-### Primary intended users
+- **Data Limitations**: Limited availability of comprehensive real estate data may affect the accuracy of predictions.
+- **Algorithm Limitations**: BaggingRegressor may struggle with capturing complex non-linear relationships in the data.
+- **Contextual Limitations**: Market fluctuations and external economic factors may impact the model's accuracy over time.
 
-### Out-of-scope use cases
+## Future Work
 
-## Factors
+- **Improvements**: Exploring advanced feature engineering techniques to capture more nuanced property characteristics.
+- **Extensions**: Integrating additional external data sources such as economic indicators and demographic information for better prediction accuracy.
 
-_Factors could include demographic or phenotypic groups, environmental conditions, technical
-attributes, or others listed in Section 4.3._
+## Citation
 
-Review section 4.3 of the [model cards paper](https://arxiv.org/abs/1810.03993).
+[If applicable, provide citation information for the model or associated research papers]
 
-### Relevant factors
+## Acknowledgments
 
-### Evaluation factors
+[Optional: Acknowledge individuals, organizations, or funding sources that contributed to the development of the model]
 
-## Metrics
+## References
 
-_The appropriate metrics to feature in a model card depend on the type of model that is being tested.
-For example, classification systems in which the primary output is a class label differ significantly
-from systems whose primary output is a score. In all cases, the reported metrics should be determined
-based on the model’s structure and intended use._
-
-Review section 4.4 of the [model cards paper](https://arxiv.org/abs/1810.03993).
-
-### Model performance measures
-
-### Decision thresholds
-
-### Approaches to uncertainty and variability
-
-## Evaluation data
-
-_All referenced datasets would ideally point to any set of documents that provide visibility into the
-source and composition of the dataset. Evaluation datasets should include datasets that are publicly
-available for third-party use. These could be existing datasets or new ones provided alongside the model
-card analyses to enable further benchmarking._
-
-Review section 4.5 of the [model cards paper](https://arxiv.org/abs/1810.03993).
-
-### Datasets
-
-### Motivation
-
-### Preprocessing
-
-## Training data
-
-Review section 4.6 of the [model cards paper](https://arxiv.org/abs/1810.03993).
-
-## Quantitative analyses
-
-_Quantitative analyses should be disaggregated, that is, broken down by the chosen factors. Quantitative
-analyses should provide the results of evaluating the model according to the chosen metrics, providing
-confidence interval values when possible._
-
-Review section 4.7 of the [model cards paper](https://arxiv.org/abs/1810.03993).
-
-### Unitary results
-
-### Intersectional result
-
-## Ethical considerations
-
-_This section is intended to demonstrate the ethical considerations that went into model development,
-surfacing ethical challenges and solutions to stakeholders. Ethical analysis does not always lead to
-precise solutions, but the process of ethical contemplation is worthwhile to inform on responsible
-practices and next steps in future work._
-
-Review section 4.8 of the [model cards paper](https://arxiv.org/abs/1810.03993).
-
-### Data
-
-### Human life
-
-### Mitigations
-
-### Risks and harms
-
-### Use cases
-
-## Caveats and recommendations
-
-_This section should list additional concerns that were not covered in the previous sections._
-
-Review section 4.9 of the [model cards paper](https://arxiv.org/abs/1810.03993).
-
+[Optional: Provide references to related papers, documentation, or resources]
 
